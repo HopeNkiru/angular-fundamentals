@@ -1,14 +1,14 @@
 {
-  "extends": "tslint:recommended",
+  "extends": string,
   "rules": {
-    "array-type": false,
-    "arrow-parens": false,
+    "array-type": boolean,
+    "arrow-parens": boolean,
     "deprecation": {
-      "severity": "warning"
+      "severity": string
     },
-    "component-class-suffix": true,
-    "contextual-lifecycle": true,
-    "directive-class-suffix": true,
+    "component-class-suffix": boolean,
+    "contextual-lifecycle": boolean,
+    "directive-class-suffix": boolean,
     "directive-selector": [
       true,
       "attribute",
@@ -25,13 +25,13 @@
       true,
       "rxjs/Rx"
     ],
-    "interface-name": false,
-    "max-classes-per-file": false,
+    "interface-name": boolean,
+    "max-classes-per-file": boolean,
     "max-line-length": [
       true,
       140
     ],
-    "member-access": false,
+    "member-access": boolean,
     "member-ordering": [
       true,
       {
@@ -43,7 +43,7 @@
         ]
       }
     ],
-    "no-consecutive-blank-lines": false,
+    "no-consecutive-blank-lines": boolean,
     "no-console": [
       true,
       "debug",
@@ -52,39 +52,39 @@
       "timeEnd",
       "trace"
     ],
-    "no-empty": false,
+    "no-empty": boolean,
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
-    "no-non-null-assertion": true,
-    "no-redundant-jsdoc": true,
-    "no-switch-case-fall-through": true,
-    "no-use-before-declare": true,
-    "no-var-requires": false,
+    "no-non-null-assertion": boolean,
+    "no-redundant-jsdoc": boolean,
+    "no-switch-case-fall-through": boolean,
+    "no-use-before-declare": boolean,
+    "no-var-requires": boolean,
     "object-literal-key-quotes": [
       true,
       "as-needed"
     ],
-    "object-literal-sort-keys": false,
-    "ordered-imports": false,
+    "object-literal-sort-keys": boolean,
+    "ordered-imports": boolean,
     "quotemark": [
       true,
       "single"
     ],
-    "trailing-comma": false,
-    "no-conflicting-lifecycle": true,
-    "no-host-metadata-property": true,
-    "no-input-rename": true,
-    "no-inputs-metadata-property": true,
-    "no-output-native": true,
-    "no-output-on-prefix": true,
-    "no-output-rename": true,
-    "no-outputs-metadata-property": true,
-    "template-banana-in-box": true,
-    "template-no-negated-async": true,
-    "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true
+    "trailing-comma": boolean,
+    "no-conflicting-lifecycle": boolean,
+    "no-host-metadata-property": boolean,
+    "no-input-rename": boolean,
+    "no-inputs-metadata-property": boolean,
+    "no-output-native": boolean,
+    "no-output-on-prefix": boolean,
+    "no-output-rename": boolean,
+    "no-outputs-metadata-property": boolean,
+    "template-banana-in-box": boolean,
+    "template-no-negated-async": boolean,
+    "use-lifecycle-interface": boolean,
+    "use-pipe-transform-interface": boolean
   },
   "rulesDirectory": [
     "codelyzer"

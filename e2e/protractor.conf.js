@@ -8,25 +8,25 @@ const { SpecReporter } = require('jasmine-spec-reporter');
  * @type { import("protractor").Config }
  */
 exports.config = {
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: number,
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
     'browserName': 'chrome'
   },
-  directConnect: true,
+  directConnect: boolean,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
-    showColors: true,
-    defaultTimeoutInterval: 30000,
+    showColors: boolean,
+    defaultTimeoutInterval: number,
     print: function() {}
   },
   onPrepare() {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json')
     });
-    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: boolean } }));
   }
 };
